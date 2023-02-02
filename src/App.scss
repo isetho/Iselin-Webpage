@@ -1,3 +1,5 @@
+$bg-color: pink;
+
 .header-container {
   background-color: #cda47a;
   height: 104px;
@@ -10,6 +12,10 @@
 .header {
   font-size: 36px;
   color: #ffffff;
+}
+
+.hero {
+  
 }
 
 .image-container {
@@ -26,14 +32,14 @@
 
 .footer {
   background-color: black;
-
+  background-color: $bg-color;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-content {
-  color: #ffffff;
-  font-size: 36px;
-  margin: 24px;
+  
+  .footer-content {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 24px;
+  }
 }
