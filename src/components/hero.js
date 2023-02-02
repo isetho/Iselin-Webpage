@@ -1,7 +1,9 @@
+import headerImage from "../assets/header_image.png";
+
 function Hero(props) {
   return (
-    <div className="header-container">
-      <h1 className="header">{props.name}</h1>
+    <div className="hero">
+      <img src={headerImage} />
     </div>
   );
 }

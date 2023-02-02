@@ -1,44 +1,104 @@
-$bg-color: pink;
+// Imports
+@import 'styles/variables.scss';
+@import url('https://fonts.cdnfonts.com/css/oswald-4');
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
-.header-container {
-  background-color: #cda47a;
-  height: 104px;
+//Functions
+@mixin rem($property, $value) {
+  #{$property}: ($value / 16) + rem;
+}
+
+//Styling
+* {
+  color: $text;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-style: bold;
+  font-size: 3em;
+  line-height: 130%;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  line-height: 150%;
+  font-size: 2em;
+}
+
+header {
+  @include rem('height', 160);
+  background-color: $primary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $text-light;
+  }
+}
+
+.content {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  @include rem('height', 600);
+
+  background-color: $primary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include rem('margin-bottom', 48);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.image-card {
+  @include rem('width', 500);
+  @include rem('height', 300);
+  background-color: $accent;
+
+  @include rem('margin', 24);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header {
-  font-size: 36px;
-  color: #ffffff;
-}
-
-.hero {
-  
-}
-
-.image-container {
-  background-color: #fefae3;
-}
-
-.text-container {
+.text-card {
+  @include rem('width', 500);
+  @include rem('height', 300);
   background-color: #ced4b2;
-}
 
-.info-container {
-  background-color: #eaeccd;
+  @include rem('margin', 24);
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .footer {
+  @include rem('min-height', 200);
   background-color: black;
-  background-color: $bg-color;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   
   .footer-content {
-    color: #ffffff;
+    color: $text-light;
     font-size: 36px;
     margin: 24px;
   }
