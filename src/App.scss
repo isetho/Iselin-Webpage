@@ -29,16 +29,32 @@ h1, h2, h3 {
   font-size: 2em;
 }
 
+a {
+  :hover {
+    text-decoration: underline;
+  }
+}
+
 header {
   @include rem('height', 160);
+  @include rem('padding', 24);
   background-color: $primary;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
 
-  h1 {
-    color: $text-light;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      color: $text-light;
+    }
+  
+    img {
+      @include rem('width', 80);
+      @include rem('height', 80); 
+    }
   }
 }
 

@@ -8,7 +8,7 @@ import TextCard from "./components/textCard";
 function App() {
   return (
     <div className="app">
-      <Header name="Iselin's portfolio" />
+      <Header name="Kontakt" />
       <Hero name="Hero" />
       <div className="content">
         <ImageCard />
