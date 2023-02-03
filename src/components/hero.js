@@ -1,4 +1,4 @@
-import headerImage from "../assets/header_image.png";
+import headerImage from "../assets/Hero.png";
 
 function Hero(props) {
   return (
