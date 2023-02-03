@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Hero name="Hero" />
+      <Intro buttonLink="https://stardewvalleywiki.com/Stardew_Valley_Wiki" />
       <div className="content">
-        <Hero name="Hero" />
-        <Intro />
         <div className="content-items">
           <Card />
           <Card />
