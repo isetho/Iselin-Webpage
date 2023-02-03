@@ -1,16 +1,18 @@
-import logo from "../assets/placeholder_logo.png";
+import logo from "../assets/logo.svg";
 
-function Header(props) {
+function Header() {
   return (
     <header>
       <div className="header-content">
-        <img src={logo} />
         <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">
-          <h1>{props.name}</h1>
+          <img src={logo} />
         </a>
-        <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">
-          <h1>{props.name}</h1>
-        </a>
+        <div className="header-links">
+          <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">About</a>
+          <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">
+            Contact
+          </a>
+        </div>
       </div>
     </header>
   );

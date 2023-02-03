@@ -36,27 +36,24 @@ a {
 }
 
 header {
-  @include rem('height', 160);
+  @include rem('height', 140);
   @include rem('padding', 24);
   background-color: $primary;
 
-  display: grid;
-
   .header-content {
+    max-width: 1100px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     h1 {
-      color: $text-light;
+      color: $text;
     }
   
     img {
       @include rem('width', 80);
       @include rem('height', 80); 
     }
-  }
-}
 
 .content {
   max-width: 1100px;
