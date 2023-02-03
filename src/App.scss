@@ -1,6 +1,5 @@
 // Imports
 @import 'styles/variables.scss';
-@import url('https://fonts.cdnfonts.com/css/oswald-4');
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
 //Functions
@@ -16,21 +15,21 @@
   font-size: 16px;
 }
 
-.title {
-  font-family: 'Oswald', sans-serif;
+.title {                               
   font-style: bold;
   font-size: 3em;
   line-height: 130%;
 }
 
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
+h1, h2, h3 {                                
   line-height: 150%;
   font-size: 2em;
 }
 
 a {
-  :hover {
+  font-size: 1.7em;
+
+  &:hover {
     text-decoration: underline;
   }
 }
@@ -55,10 +54,14 @@ header {
       @include rem('height', 80); 
     }
 
-.content {
-  max-width: 1100px;
-  display: flex;
-  justify-content: center;
+    .header-links {
+      display: flex;
+
+      a {
+        @include rem('margin', 26);
+      }
+    }
+  }
 }
 
 .hero {
@@ -80,7 +83,28 @@ header {
   }
 }
 
-.image-card {
+.intro {
+  @include rem('height', 300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  .content-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
   @include rem('width', 500);
   @include rem('height', 300);
   background-color: $accent;
@@ -90,18 +114,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.text-card {
-  @include rem('width', 500);
-  @include rem('height', 300);
-  background-color: #ced4b2;
-
-  @include rem('margin', 24);
-
-  display: flex;
-  justify-content: center;
-  align-items: center; 
 }
 
 .footer {
