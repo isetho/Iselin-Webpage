@@ -2,17 +2,22 @@ import "./App.scss";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
-import ImageCard from "./components/imageCard";
-import TextCard from "./components/textCard";
+import Card from "./components/card";
+import Intro from "./components/intro";
 
 function App() {
   return (
     <div className="app">
-      <Header name="Kontakt" />
-      <Hero name="Hero" />
+      <Header />
       <div className="content">
-        <ImageCard />
-        <TextCard />
+        <Hero name="Hero" />
+        <Intro />
+        <div className="content-items">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
       <Footer name="Fin footer" />
     </div>
