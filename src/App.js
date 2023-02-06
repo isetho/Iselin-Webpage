@@ -12,6 +12,7 @@ function App() {
       <Hero name="Hero" />
       <Intro buttonLink="https://stardewvalleywiki.com/Stardew_Valley_Wiki" />
       <div className="content">
+        <h1>Arbeid</h1>
         <div className="content-items">
           <Card />
           <Card />
