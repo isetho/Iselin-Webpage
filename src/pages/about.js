@@ -1,5 +1,11 @@
+import Info from "../components/info";
+
 function About() {
-  return <h1>Velkommen til om meg siden</h1>;
+  return (
+    <div className="content">
+      <Info />
+    </div>
+  );
 }
 
 export default About;
