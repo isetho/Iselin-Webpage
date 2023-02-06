@@ -38,7 +38,6 @@ a {
 button {
   width: fit-content;
   text-align: center;
-  font-size: 1.7em;
   @include rem('padding', 20);
 }
 
@@ -137,12 +136,13 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
 
   .content-items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 
     .card {
       @include rem('width', 500);
@@ -159,6 +159,23 @@ header {
 
   h1 {
     text-transform: uppercase;
+  }
+
+  .form {
+    background-color: $text-light;
+    @include rem('padding', 20);
+    @include rem('margin-bottom', 32);
+  
+    input[type=text], input[type=email], input[type=subject] {
+      width: 100%;
+      border: 1px solid $text;
+      border-radius: 4px;
+      box-sizing: border-box;
+      @include rem('margin-top', 6);
+      @include rem('margin-bottom', 16);
+      @include rem('padding', 12);
+      resize: vertical;
+    }
   }
 }
 

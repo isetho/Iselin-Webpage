@@ -1,5 +1,11 @@
+import Form from "../components/form/form";
+
 function Contact() {
-  return <h1>Velkommen til kontaktsiden</h1>;
+  return (
+    <div className="content">
+      <Form />
+    </div>
+  );
 }
 
 export default Contact;
