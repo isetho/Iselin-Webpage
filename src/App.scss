@@ -38,11 +38,17 @@ button {
   width: fit-content;
   text-align: center;
   font-size: 1.7em;
-  @include rem('padding', 18);
+  @include rem('padding', 20);
+}
 
+.button-primary {
   border: none;
   border-radius: 40px;
   background-color: cadetblue;
+}
+
+.button-secondary {
+  border: solid 2px black;
 }
 
 header {
