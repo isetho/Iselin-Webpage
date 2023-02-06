@@ -8,7 +8,9 @@ function Intro(props) {
           grafisk design. Hun er utdannet innenfor Informasjonsteknologi ved
           Høyskolen på Vestlandet og har en fartstid som utvikler på 1 år.
         </p>
-        <button href="{props.buttonLink">Les mer om personen bak</button>
+        <button href="{props.buttonLink" className="button-primary">
+          Les mer om personen bak
+        </button>
       </div>
     </div>
   );
