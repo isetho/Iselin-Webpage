@@ -7,11 +7,13 @@ import Footer from "./components/footer";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import ScrollToTop from "./helpers/scrollToTop";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
