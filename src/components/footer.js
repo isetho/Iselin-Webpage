@@ -1,7 +1,7 @@
-function Footer(props) {
+function Footer() {
   return (
     <footer className="footer">
-      <h1 className="footer-content">{props.name}</h1>
+      <p className="footer-content">©️ Iselin Thorsen Nilsen, 2023</p>
     </footer>
   );
 }
