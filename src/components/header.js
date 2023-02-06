@@ -1,19 +1,18 @@
 import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <div className="header-content">
-        <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">
+      <nav className="header-content">
+        <Link to="/">
           <img src={logo} />
-        </a>
+        </Link>
         <div className="header-links">
-          <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">About</a>
-          <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">
-            Contact
-          </a>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }

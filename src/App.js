@@ -1,25 +1,24 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.scss";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Hero from "./components/hero";
-import Card from "./components/card";
-import Intro from "./components/intro";
+
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Hero name="Hero" />
-      <Intro buttonLink="https://stardewvalleywiki.com/Stardew_Valley_Wiki" />
-      <div className="content">
-        <h1>Arbeid</h1>
-        <div className="content-items">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
       <Footer name="Fin footer" />
     </div>
   );
